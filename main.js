@@ -136,6 +136,7 @@ a += 10;
 
 // домашка
 
+/*
 let r = (8 + 15) / ((14 - 9) * (7.8 - 15 * 14));
 console.log(r);
 
@@ -150,3 +151,31 @@ let s1 = "12";
 let s2 = "40";
 console.log(s1 + s2);
 console.log(Number(s1) + Number(s2));
+*/
+
+// less0n 0.2.7
+
+/*
+let a = 5;
+let b = 8;
+let bool_1 = a < b;
+console.log("5 >= 7 = " + (5 >= 7));
+console.log("5 == 5 = " + (5 == 5));
+console.log("5 != 5 = " + (5 != 5));
+
+console.log(0 == "");
+console.log(0 === "");
+console.log(5 === "5");
+console.log(5 == "5");
+
+console.log("АБВ" > "ББВ");
+*/
+
+let bool_1 = (100 * 200 > 200 * 100);
+console.log(bool_1);
+
+let bool_2 = (400 > 300);
+console.log(bool_2);
+
+console.log(0 == false);
+console.log(0 === false);
