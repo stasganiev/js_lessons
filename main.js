@@ -233,6 +233,7 @@ console.log("result = " + result);
 
 // домашка
 
+/*
 let isMan = true;
 let myAge = 40;
 
@@ -256,3 +257,38 @@ if (myAge < 18) {
 
 let str = (myAge < 18)? "У меня юный возраст" : (myAge < 30)? "Я молодой" : (myAge < 50)? "Я взрослый" : (myAge < 80)? "Я зрелый" : "Я старый";
 console.log(str);
+*/
+
+// lesson 0.2.10
+
+/*
+let a = prompt("Введите первое число", "000");
+let b = prompt("Введите второе число");
+console.log(typeof(a));
+
+a = Number(a);
+b = Number(b);
+if (Number.isNaN(a)) {
+    console.log("Некорректное первое число");
+} else if (Number.isNaN(b)) {
+    console.log("Некорректное второе число");
+} else {
+    console.log("Сумма этих чисел равна " + (a + b));
+    if (confirm("Хотите узнать их произведение?")) {
+        console.log("Произведение этих чисел " + (a * b));
+    }
+}
+*/
+
+// домашка
+
+if (confirm("Хотите вопрос?")) {
+    let myAge = +prompt("Сколько вам лет?", 40);
+
+    if (Number.isNaN(myAge)) {
+        alert("Некорректные данные!");
+    } else {
+        let str = (myAge < 18)? "У меня юный возраст" : (myAge < 30)? "Я молодой" : (myAge < 50)? "Я взрослый" : (myAge < 80)? "Я зрелый" : "Я старый";
+        alert(str);
+    }
+}
