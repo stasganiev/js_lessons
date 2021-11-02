@@ -171,6 +171,8 @@ console.log(5 == "5");
 console.log("АБВ" > "ББВ");
 */
 
+// домашка
+
 let bool_1 = (100 * 200 > 200 * 100);
 console.log(bool_1);
 
@@ -179,3 +181,78 @@ console.log(bool_2);
 
 console.log(0 == false);
 console.log(0 === false);
+
+// lesson 0.2.8
+
+/*
+let a = true;
+let b = false;
+
+console.log("a = " + a);
+console.log("b = " + b);
+console.log("!a = " + (!a));
+console.log("a || b = " + (a || b));
+
+// побитовые операции
+console.log("a ^ b = " + (a ^ b)); // побитовое исключающее ИЛИ
+console.log("3 ^ 4 = " + (3 ^ 4)); // 7
+console.log("3 & 4 = " + (3 & 4));
+console.log("3 | 4 = " + (3 | 4));
+*/
+
+// домашка
+
+let res = (5 < 6 || (true && (5 >= 5 && (false || true) && (true && true))));
+console.log(res);
+
+// lesson 0.2.9
+
+/*
+let a = 5;
+if (a > 5) {
+    console.log("Переменная а больше 5");
+}
+else {
+    console.log("Переменная а НЕ больше 5");
+}
+
+if (a > 5) {
+    console.log("Переменная а больше 5");
+}
+else if (a == 5) {
+    console.log("Переменная а равна 5");
+}
+else {
+    console.log("Переменная а меньше 5");
+}
+
+let b = 0;
+let result = (b != a)? a / b : 0;
+console.log("result = " + result);
+*/
+
+// домашка
+
+let isMan = true;
+let myAge = 40;
+
+if (isMan) {
+    console.log("Я мужчина");
+} else {
+    console.log("Я женщина");
+}
+
+if (myAge < 18) {
+    console.log("У меня юный возраст");
+} else if (myAge < 30) {
+    console.log("Я молодой");
+} else if (myAge < 50) {
+    console.log("Я взрослый");
+} else if (myAge < 80) {
+    console.log("Я зрелый");
+} else {
+    console.log("Я старый");
+}
+
+let str = (myAge < 18)? "У меня юный возраст" : (myAge < 30)? "Я молодой" : (myAge < 50)? "Я взрослый" : (myAge < 80)? "Я зрелый" : "Я старый";
+console.log(str);
