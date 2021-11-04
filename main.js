@@ -173,6 +173,7 @@ console.log("АБВ" > "ББВ");
 
 // домашка
 
+/*
 let bool_1 = (100 * 200 > 200 * 100);
 console.log(bool_1);
 
@@ -181,6 +182,7 @@ console.log(bool_2);
 
 console.log(0 == false);
 console.log(0 === false);
+*/
 
 // lesson 0.2.8
 
@@ -202,8 +204,10 @@ console.log("3 | 4 = " + (3 | 4));
 
 // домашка
 
+/*
 let res = (5 < 6 || (true && (5 >= 5 && (false || true) && (true && true))));
 console.log(res);
+*/
 
 // lesson 0.2.9
 
@@ -282,6 +286,7 @@ if (Number.isNaN(a)) {
 
 // домашка
 
+/*
 if (confirm("Хотите вопрос?")) {
     let myAge = +prompt("Сколько вам лет?", 40);
 
@@ -290,5 +295,72 @@ if (confirm("Хотите вопрос?")) {
     } else {
         let str = (myAge < 18)? "У меня юный возраст" : (myAge < 30)? "Я молодой" : (myAge < 50)? "Я взрослый" : (myAge < 80)? "Я зрелый" : "Я старый";
         alert(str);
+    }
+}
+*/
+
+// lesson 0.2.11
+
+/*
+for (let i = 0; i < 5; i++) {
+    console.log(i);
+}
+console.log("Цикл завершен");
+
+let i = 0;
+while (i < 5) {
+    console.log(i);
+    i++;
+}
+
+i = 0;
+do {
+    console.log(i);
+    i++;
+} while (i < 5);
+
+for (let i = 0; i < 10; i += 2) {
+    if (i == 4) continue;
+    if (i == 8) break;
+    console.log(i);
+}
+
+let summ = 0;
+let n = 10;
+i = 1;
+for (; i <= n; i++) {
+    summ += i;
+}
+*/
+
+// домашка
+
+/*
+for (let i = 0; i < 20; i++) {
+    console.log("Здравствуйте!");
+}
+
+let i = 0;
+while (i < 20) {
+    console.log("Здравствуйте!");
+    i++;
+}
+
+i = 0;
+do {
+    console.log("Здравствуйте!");
+    i++;
+} while (i < 20)
+
+for (let i = 1; i <= 5; i++) {
+    for (let j = 1; j <= 5; j++) {
+        console.log(`${i} - ${j}`);
+    }
+}
+*/
+
+for (i = 1; i <= 5; i++) {
+    for (i = 1; i <= 5; i++) {
+        console.log(i);
     }
 }
