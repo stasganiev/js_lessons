@@ -357,10 +357,108 @@ for (let i = 1; i <= 5; i++) {
         console.log(`${i} - ${j}`);
     }
 }
-*/
 
 for (i = 1; i <= 5; i++) {
     for (i = 1; i <= 5; i++) {
         console.log(i);
     }
+}
+*/
+
+// lesson 0.2.12
+
+/*
+let a = +prompt("Введите целое число от 1 до 5");
+
+switch (a) {
+    case 1: {
+        alert("Один");
+        break;
+    }
+    case 2: {
+        alert("Два");
+        break;
+    }
+    case 3: {
+        alert("Три");
+        break;
+    }
+    case 4: {
+        alert("Четыре");
+        break;
+    }
+    case 5: {
+        alert("Пять");
+        break;
+    }
+    default: {
+        alert("Нет представления этого числа в виде строки");
+    }
+}
+*/
+
+// lesson 0.2.13
+
+/*
+function hello() {
+    console.log("Hello");
+}
+
+function toLog(msg) {
+    console.log(msg);
+}
+
+function sum(x, y, r = false) {
+    let result = x + y;
+    if (r) return result;
+    toLog(result);
+}
+
+hello();
+toLog("Что-то");
+sum(10,5);
+let s = sum(15, 20, true);
+*/
+
+function numToStr(num) {
+    let n = +num;
+    switch (n) {
+        case 1: {
+            return "Один";
+        }
+        case 2: {
+            return "Два";
+        }
+        case 3: {
+            return "Три";
+        }
+        case 4: {
+            return "Четыре";
+        }
+        case 5: {
+            return "Пять";
+        }
+        default: {
+            return "Нет представления этого числа в виде строки";
+        }
+    }
+}
+
+function isCorrect(n) {
+    let n1 = +n;
+    if (Number.isNaN(n1) || n1 < 1 || n1 > 5) return false;
+    return true;
+}
+
+while (true) {
+    let n = prompt("Введите число от 1 до 5");
+    if (n === "-1") {
+        break;
+    }
+    if (!isCorrect(n)) {
+        alert("Некорректный ввод");
+        continue;
+    }
+    let s = numToStr(n);
+    alert(`Вы ввели ${s}`);
 }
