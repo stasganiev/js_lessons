@@ -420,6 +420,9 @@ sum(10,5);
 let s = sum(15, 20, true);
 */
 
+// домашка
+
+/*
 function numToStr(num) {
     let n = +num;
     switch (n) {
@@ -462,3 +465,58 @@ while (true) {
     let s = numToStr(n);
     alert(`Вы ввели ${s}`);
 }
+*/
+
+// lesson 0.2.14
+
+function hello() {
+    console.log("Hello!");
+}
+
+let h = function() {
+    console.log("Фукнциональное выражение");
+}
+
+function success(name) {
+    alert(`Спасибо, ${name}`);
+}
+
+function error() {
+    alert(`Некорректный ввод`);
+}
+
+function errorName() {
+    alert(`Некорректное имя`);
+}
+
+function checkName(name, success, error) {
+    if (name.length >= 2) success(name);
+    else error();
+}
+
+console.log(hello);
+let f = hello;
+f();
+h();
+
+let name = prompt("Введите имя");
+checkName(name, success, error);
+checkName(name, success, errorName);
+
+let func;
+let x = +prompt("Введите число");
+if (x < 0) {
+    func = function() {
+        alert("Вы ввели отрицательное число");
+    }
+} else if (x == 0) {
+    func = function() {
+        alert("Вы ввели 0");
+    }
+} else {
+    func = function() {
+        alert("Вы ввели положительное число");
+    }
+}
+
+func();
