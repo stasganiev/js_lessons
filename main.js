@@ -469,6 +469,7 @@ while (true) {
 
 // lesson 0.2.14
 
+/*
 function hello() {
     console.log("Hello!");
 }
@@ -520,3 +521,54 @@ if (x < 0) {
 }
 
 func();
+*/
+
+// домашка
+
+/*
+let error = function(msg) {
+    console.log(msg);
+}
+
+let myfunc = function(n1, n2, f) {
+    let num1 = Number(n1);
+    let num2 = Number(n2);
+    if (Number.isNaN(num1) || Number.isNaN(num2)) {
+        f("Были переданы некорректные параметры");
+        return false;
+    }
+    return n1 + n2;
+}
+
+console.log(myfunc("ddd", 7 , error));
+*/
+
+// leccon 0.2.15
+
+/*
+let sum = (x, y, z) => (x + y + z);
+let hello = () => console.log("Hello!");
+
+let div = (x, y) => {
+    if (y === 0) return false;
+    return x / y;
+}
+*/
+
+// домашка
+
+/*
+let error = (msg) => console.log(msg);
+
+let myfunc = function(n1, n2, f) {
+    let num1 = Number(n1);
+    let num2 = Number(n2);
+    if (Number.isNaN(num1) || Number.isNaN(num2)) {
+        f("Были переданы некорректные параметры");
+        return false;
+    }
+    return n1 + n2;
+}
+
+console.log(myfunc("ddd", 7 , error));
+*/
