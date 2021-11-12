@@ -572,3 +572,47 @@ let myfunc = function(n1, n2, f) {
 
 console.log(myfunc("ddd", 7 , error));
 */
+
+//lesson 0.2.16
+
+/*
+function div(x, y) {
+    try {
+        if (y === 0) throw new Error("Деление на 0");
+        result = x / y;
+        return result;
+    }
+    catch(e) {
+        console.log("Ошибка: " + e.name);
+        console.log(e);
+    }
+    finally {
+        console.log("В любом случае finally выполняется")ж
+    }
+}
+
+div(10, 5);
+*/
+
+// домашка
+
+let error = (msg) => console.log(msg);
+
+let myfunc = function(n1, n2, f) {
+    let num1 = Number(n1);
+    let num2 = Number(n2);
+
+    try {
+        if (Number.isNaN(num1) || Number.isNaN(num2)) throw new Error("Некорректные данные");
+    }
+    catch(e) {
+        f("Были переданы некорректные параметры");
+    }
+    finally {
+        console.log("Завершаем выполнение функции");
+    }
+
+    return n1 + n2;
+}
+
+console.log(myfunc("ddd", 7 , error));
