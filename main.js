@@ -596,6 +596,7 @@ div(10, 5);
 
 // домашка
 
+/*
 let error = (msg) => console.log(msg);
 
 let myfunc = function(n1, n2, f) {
@@ -616,3 +617,23 @@ let myfunc = function(n1, n2, f) {
 }
 
 console.log(myfunc("ddd", 7 , error));
+*/
+
+// lesson 0.2.18
+
+// домашка
+
+let counter = 0;
+let lcounter = 0;
+
+function plus(lcounter) {
+    counter++;
+    lcounter++;
+}
+
+plus();
+plus();
+plus();
+
+console.log(counter);
+console.log(lcounter);
