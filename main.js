@@ -622,7 +622,7 @@ console.log(myfunc("ddd", 7 , error));
 // lesson 0.2.18
 
 // домашка
-
+ /*
 let counter = 0;
 let lcounter = 0;
 
@@ -637,3 +637,14 @@ plus();
 
 console.log(counter);
 console.log(lcounter);
+*/
+
+// lesson 0.2.19
+
+// домашка
+
+let arr = [23, 45, 84, 11, 7, 43, 72, 98, 27, 17];
+
+console.log(`Минимум: ${minElemOfArray(arr)}`);
+console.log(`Максимум: ${maxElemOfArray(arr)}`);
+console.log(`Сумма: ${sumOfArray(arr)}`);
