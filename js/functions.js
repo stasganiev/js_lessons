@@ -42,3 +42,13 @@ function div(x, y) {
     
     return +x / +y;
 }
+
+function Rect(x, y, height, width) {
+    this.x = x;
+    this.y = y;
+    this.height = height;
+    this.width = width;
+    this.sqr = function() {
+        return this.height * this.width;
+    }
+}

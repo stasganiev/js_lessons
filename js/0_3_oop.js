@@ -1,5 +1,7 @@
 "use strict";
 
+// lesson 0.3.2
+
 /*
 let point = {};
 point = {
@@ -32,6 +34,7 @@ console.log(obj.p.x);
 
 // домашка
 
+/*
 function printObject(obj) {
     for (let key in obj) {
         console.log(`Поле ${key} равно ${obj[key]}`);
@@ -53,3 +56,11 @@ rect.height = 17;
 rect.width = 92;
 
 printObject(rect);
+*/
+
+//lesson 0.3.3
+
+let r1 = new Rect(0, 0, 15, 39);
+console.log(r1.sqr());
+let r2 = new Rect(0, 0, 10, 50);
+console.log(r2.sqr());
