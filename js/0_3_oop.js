@@ -60,22 +60,34 @@ printObject(rect);
 
 //lesson 0.3.3
 
+/*
 let r1 = new Rect(0, 0, 15, 39);
 console.log(r1.sqr());
 let r2 = new Rect(0, 0, 10, 50);
 console.log(r2.sqr());
+*/
 
 //lesson 0.3.4
 
+/*
 let z1 = Symbol();
 let z2 = Symbol();
 r1[z1] = 20;
 r1[z2] = 30;
 
 console.log(`Новые переменные имеют значения ${r1[z1]} и ${r1[z2]}`);
+*/
 
 // lesson 0.3.5
 
+/*
 let p = new Point(10, 20);
-alert(p);
-alert(Number(p));
+console.log(p);
+console.log(Number(p));
+*/
+
+// домашка
+
+let r1 = new Rect(0, 0, 15, 39);
+console.log(String(r1));
+console.log(Number(r1));

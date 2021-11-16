@@ -51,6 +51,12 @@ function Rect(x, y, height, width) {
     this.sqr = function() {
         return this.height * this.width;
     }
+    this.toString = function() {
+        return `Прямоугольник с координатами (${this.x}; ${this.y}) шириной ${this.width} и высотой ${this.height}`;
+    }
+    this.valueOf = function() {
+        return this.sqr();
+    }
 }
 
 function Point(x, y) {
