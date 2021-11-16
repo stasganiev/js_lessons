@@ -73,3 +73,9 @@ r1[z1] = 20;
 r1[z2] = 30;
 
 console.log(`Новые переменные имеют значения ${r1[z1]} и ${r1[z2]}`);
+
+// lesson 0.3.5
+
+let p = new Point(10, 20);
+alert(p);
+alert(Number(p));

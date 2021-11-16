@@ -52,3 +52,14 @@ function Rect(x, y, height, width) {
         return this.height * this.width;
     }
 }
+
+function Point(x, y) {
+    this.x = x;
+    this.y = y;
+    this.toString = function() {
+        return `Точка с координатами ${this.x} и ${this.y}`;
+    }
+    this.valueOf = function() {
+        return Math.sqrt(this.x ** 2 + this.y ** 2);
+    }
+}
