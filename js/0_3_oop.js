@@ -171,3 +171,33 @@ console.log(r1.square);
 r1.width = 20;
 r1.height = 10;
 console.log(`w = ${r1.width}, h = ${r1.height}`);
+
+// lesson 0.3.8
+
+class Point {
+    static counter = 0;
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        Point.counter++;
+    }
+
+    static getCounter() {
+        return Point.counter;
+    }
+
+    static getDistance(p1, p2) {
+        return Math.sqrt((p1.x - p2.x) ** 2 + (p1.y - p2.y) ** 2);
+    }
+}
+
+console.log(Point.counter);
+let p1 = new Point(5, 10);
+let p2 = new Point(10, 20);
+let p3 = new Point(15, 30);
+console.log(Point.counter);
+
+console.log(Point.getDistance(p1, p2));
+console.log(Point.getDistance(p3, p2));
+console.log(Point.getDistance(p1, p3));
+
