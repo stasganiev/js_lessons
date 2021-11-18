@@ -43,6 +43,7 @@ function div(x, y) {
     return +x / +y;
 }
 
+/*
 function Rect(x, y, height, width) {
     this.x = x;
     this.y = y;
@@ -62,6 +63,7 @@ function Rect(x, y, height, width) {
 function Point(x, y) {
     this.x = x;
     this.y = y;
+    z = 5;
     this.toString = function() {
         return `Точка с координатами ${this.x} и ${this.y}`;
     }
@@ -69,3 +71,4 @@ function Point(x, y) {
         return Math.sqrt(this.x ** 2 + this.y ** 2);
     }
 }
+*/

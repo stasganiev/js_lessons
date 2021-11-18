@@ -88,6 +88,69 @@ console.log(Number(p));
 
 // домашка
 
+/*
 let r1 = new Rect(0, 0, 15, 39);
 console.log(String(r1));
 console.log(Number(r1));
+*/
+
+// lesson 0.3.6-7
+
+/*
+class Point {
+    z = 5;
+    constructor(x, y) {
+        this._x = x;
+        this._y = y;
+    }
+    getDistance() {
+        return Math.sqrt(this.x ** 2 + this.y ** 2);
+    }
+    distance() {
+        return Math.sqrt(this.x ** 2 + this.y ** 2);
+    }
+    get x() {
+        return this._x * 10;
+    }
+    get y() {
+        return this._y * 10;
+    }
+    set x(coor) {
+        if (coor < 0) this._x = 0;
+        else this._x = coor;
+    }
+    set y(coor) {
+        if (coor < 0) this._y = 0;
+        else this._y = coor;
+    }
+}
+
+let p = new Point(10, 20);
+console.log(p.distance());
+console.log(p.x);
+console.log(p.y);
+p.x = -100;
+p.y = -50;
+console.log(p.x);
+console.log(p.y);
+*/
+
+// домашка
+
+class Rect {
+    constructor(x, y, height, width) {
+        this.x = x;
+        this.y = y;
+        this.height = height;
+        this.width = width;
+    }
+    sqr() {
+        return this.height * this.width;
+    }
+}
+
+let r1 = new Rect(0, 0, 15, 39);
+console.log(r1);
+r1.x = 10;
+r1.y = 20;
+console.log(r1);
