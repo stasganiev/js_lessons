@@ -94,7 +94,7 @@ console.log(String(r1));
 console.log(Number(r1));
 */
 
-// lesson 0.3.6-7
+// lessons 0.3.6-7
 
 /*
 class Point {
@@ -141,11 +141,25 @@ class Rect {
     constructor(x, y, height, width) {
         this.x = x;
         this.y = y;
-        this.height = height;
-        this.width = width;
+        this._height = height;
+        this._width = width;
     }
-    sqr() {
+    get square() {
         return this.height * this.width;
+    }
+    get height() {
+        return this._height;
+    }
+    get width() {
+        return this._width;
+    }
+    set height(h) {
+        if (h < 0) throw new Error('Ошибка! Высота не может быть отрицательной')
+        else this._height = h;
+    }
+    set width(w) {
+        if (w < 0) throw new Error('Ошибка! Ширина не может быть отрицательной');
+        else this._width = w;
     }
 }
 
@@ -153,4 +167,7 @@ let r1 = new Rect(0, 0, 15, 39);
 console.log(r1);
 r1.x = 10;
 r1.y = 20;
-console.log(r1);
+console.log(r1.square);
+r1.width = 20;
+r1.height = 10;
+console.log(`w = ${r1.width}, h = ${r1.height}`);
