@@ -138,11 +138,13 @@ console.log(p.y);
 // домашка
 
 class Rect {
+    static counter = 0;
     constructor(x, y, height, width) {
         this.x = x;
         this.y = y;
         this._height = height;
         this._width = width;
+        Rect.counter++;
     }
     get square() {
         return this.height * this.width;
@@ -161,8 +163,12 @@ class Rect {
         if (w < 0) throw new Error('Ошибка! Ширина не может быть отрицательной');
         else this._width = w;
     }
+    static getCounter() {
+        return Rect.counter;
+    }
 }
 
+/*
 let r1 = new Rect(0, 0, 15, 39);
 console.log(r1);
 r1.x = 10;
@@ -171,6 +177,7 @@ console.log(r1.square);
 r1.width = 20;
 r1.height = 10;
 console.log(`w = ${r1.width}, h = ${r1.height}`);
+*/
 
 // lesson 0.3.8
 
@@ -201,3 +208,10 @@ console.log(Point.getDistance(p1, p2));
 console.log(Point.getDistance(p3, p2));
 console.log(Point.getDistance(p1, p3));
 
+// домашка
+
+console.log(Rect.counter);
+let r1 = new Rect(0, 0, 15, 39);
+let r2 = new Rect(5, 15, 25, 13);
+let r3 = new Rect(10, 20, 10, 30);
+console.log(Rect.counter);
