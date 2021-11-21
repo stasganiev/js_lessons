@@ -137,6 +137,7 @@ console.log(p.y);
 
 // домашка
 
+/*
 class Rect {
     static counter = 0;
     constructor(x, y, height, width) {
@@ -167,6 +168,7 @@ class Rect {
         return Rect.counter;
     }
 }
+*/
 
 /*
 let r1 = new Rect(0, 0, 15, 39);
@@ -181,6 +183,7 @@ console.log(`w = ${r1.width}, h = ${r1.height}`);
 
 // lesson 0.3.8
 
+/*
 class Point {
     static counter = 0;
     constructor(x, y) {
@@ -207,11 +210,97 @@ console.log(Point.counter);
 console.log(Point.getDistance(p1, p2));
 console.log(Point.getDistance(p3, p2));
 console.log(Point.getDistance(p1, p3));
+*/
 
 // домашка
 
+/*
 console.log(Rect.counter);
 let r1 = new Rect(0, 0, 15, 39);
 let r2 = new Rect(5, 15, 25, 13);
 let r3 = new Rect(10, 20, 10, 30);
 console.log(Rect.counter);
+*/
+
+// lesson 0.3.9
+
+/*
+class Shape {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+    }
+    getDistance() {
+        return Math.sqrt(this.x ** 2 + this.y ** 2);
+    }
+    draw() {}
+}
+
+class Point extends Shape {
+    draw() {
+        console.log('Drawing point');
+    }
+}
+
+class Circle extends Shape {
+    constructor(x, y, r) {
+        super(x, y);
+        this.r = r;
+    }
+
+    draw() {
+        console.log('Drawing circle');
+    }
+}
+
+let s = new Shape(5, 7);
+let p = new Point(15, 20);
+let c = new Circle(10, 5, 30);
+
+console.log(s);
+console.log(p);
+console.log(c);
+
+console.log(s.getDistance());
+console.log(p.getDistance());
+console.log(c.getDistance());
+
+s.draw();
+p.draw();
+c.draw();
+*/
+
+// домашка
+
+class Auto {
+    constructor(x, y, year) {
+        this.x = x;
+        this.y = y;
+        this.year = year;
+    }
+    muveTo() {
+        console.log(`Moving Auto`);
+    }
+}
+
+class Tractor extends Auto {
+    constructor(x, y, year, countOfBucket) {
+        super(x, y, year);
+        this.countOfBucket = countOfBucket;
+    }
+    muveTo(x, y) {
+        this.x = x;
+        this.y = y;
+        console.log(`Moving Tractor to ${this.x}, ${this.y}`);
+    }
+}
+
+let a = new Auto(10, 20, 2010);
+let t = new Tractor(25, 35, 2008, 1);
+
+console.log(a);
+console.log(t);
+a.muveTo();
+t.muveTo(45, 70);
+console.log(a);
+console.log(t);
