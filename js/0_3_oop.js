@@ -272,6 +272,7 @@ c.draw();
 
 // домашка
 
+/*
 class Auto {
     constructor(x, y, year) {
         this.x = x;
@@ -304,3 +305,79 @@ a.muveTo();
 t.muveTo(45, 70);
 console.log(a);
 console.log(t);
+*/
+
+// lesson 0.3.10, 11
+
+/*
+class Point {
+    constructor(x, y) {
+        this._x = x;
+        this._y = y;
+    }
+    getX() {
+        return this._x;
+    }
+    getY() {
+        return this._y;
+    }
+    setX(coor) {
+        if (this.checkCoor(coor)) this._x = coor;
+    }
+    setY(coor) {
+        if (this.checkCoor(coor)) this._y = coor;
+    }
+    checkCoor(coor) {
+        if (coor < 0) throw new Error('Отрицательные координаты не поддерживаются!');
+        return true;
+    }
+}
+
+let p = new Point(10, 20);
+console.log(p.getX());
+console.log(p.getY());
+
+let descriptor = Object.getOwnPropertyDescriptors(p, '_x');
+console.log(descriptor);
+
+Object.defineProperty(p, '_x', {
+    writable: false,
+    enumerable: false,
+    configurable: false
+});
+
+for (let f in p) console.log(f);
+
+p._x = 25; // ошибка
+delete p._x; // ошибка
+*/
+
+// lesson 0.3.12
+
+let log = {
+    toLog(str) {
+        console.log(str);
+    }
+}
+
+class Point {
+    constructor(x, y) {
+        this.x = x;
+        this.y = y;
+        this.toLog('Создан новый объект Point');
+    }
+}
+
+class User {
+    constructor() {
+        this.toLog('Добавлен новый пользователь');
+    }
+}
+
+Object.assign(Point.prototype, log);
+Object.assign(User.prototype, log);
+
+let p = new Point(5, 20);
+let u = new User();
+
+p.toLog('Какая-то информация');
