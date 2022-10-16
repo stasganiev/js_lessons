@@ -1,13 +1,19 @@
-.topic {
-  border-radius: 9px;
-  background-color: #fffaf0;
-  padding: 20px;
-}
 
 .lesson {
   display: flex;
   flex-direction: row;
   align-content: space-between;
+  border-radius: 9px;
+  background-color: #fffaf0;
+  padding: 20px;
+  position: relative;
+}
+
+.title-lesson {
+  position: absolute;
+  top: 0;
+  right: 0;
+  font-size: 10px;
 }
 
 .input-group {
