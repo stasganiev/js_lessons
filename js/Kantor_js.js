@@ -39,6 +39,7 @@ btnCheckNumber.addEventListener('click', function(evt) {
 const innputNum1 = document.querySelector('.input_num1-input');
 const innputNum2 = document.querySelector('.input_num2-input');
 const btnOddNums = document.querySelector('.btn_odd-nums');
+const btnOddSimple = document.querySelector('.btn_odd-simple');
 
 ////////////////////////////////
 // Решения упражнений
@@ -54,6 +55,21 @@ const checkOddNums = function(num1, num2) {
 
 }
 
+const calcSimpleNumbers = function(num1, num2) {
+
+  nextNum:
+  for(let i = num1; i <= num2; i++) {
+    if (i == 1) {
+      continue;
+    }
+    for(let j = 2; j < i; j++) {
+      if (i % j == 0) continue nextNum;
+    }
+    console.log(i);
+  }
+
+}
+
 ////////////////////////////////
 // Конец: Решения упражнений
 ////////////////////////////////
@@ -61,4 +77,9 @@ const checkOddNums = function(num1, num2) {
 btnOddNums.addEventListener('click', function(evt) {
   evt.preventDefault();
   checkOddNums(+innputNum1.value, +innputNum2.value);
+});
+
+btnOddSimple.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  calcSimpleNumbers(+innputNum1.value, +innputNum2.value);
 });
