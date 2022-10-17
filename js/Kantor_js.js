@@ -40,6 +40,7 @@ const innputNum1 = document.querySelector('.input_num1-input');
 const innputNum2 = document.querySelector('.input_num2-input');
 const btnOddNums = document.querySelector('.btn_odd-nums');
 const btnOddSimple = document.querySelector('.btn_odd-simple');
+const btnOddPow = document.querySelector('.btn_odd-pow');
 
 ////////////////////////////////
 // Решения упражнений
@@ -70,6 +71,19 @@ const calcSimpleNumbers = function(num1, num2) {
 
 }
 
+const calcPow = function(num1, num2) {
+
+  let res = num1;
+  for(let i = 1; i < num2; i++) {
+    res *= num1;
+  }
+
+  console.log(res);
+
+  return res;
+
+}
+
 ////////////////////////////////
 // Конец: Решения упражнений
 ////////////////////////////////
@@ -82,4 +96,9 @@ btnOddNums.addEventListener('click', function(evt) {
 btnOddSimple.addEventListener('click', function(evt) {
   evt.preventDefault();
   calcSimpleNumbers(+innputNum1.value, +innputNum2.value);
+});
+
+btnOddPow.addEventListener('click', function(evt) {
+  evt.preventDefault();
+  calcPow(+innputNum1.value, +innputNum2.value);
 });
