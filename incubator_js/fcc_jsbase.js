@@ -2,4 +2,5 @@
 
 let character = 'Hello';
 let count = 8;
-let rows = [];
+let rows = ["Naomi", "Quincy", "CamperChan"];
+console.log(rows[0]);
