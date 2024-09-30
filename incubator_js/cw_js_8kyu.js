@@ -31,3 +31,16 @@ function disemvowel(str) {
   }
   return rez;
 }
+
+// Lesson 3
+function roots(a,b,c){
+  let subSqrt = Math.sqrt(b*b - 4*a*c);
+  let x1 = (-b + subSqrt) / (2*a);
+  let x2 = (-b - subSqrt) / (2*a);
+
+  if (isNaN(x1) || isNaN(x2)) {
+    return null;
+  }
+
+  return +(x1 + x2).toFixed(2);
+}
