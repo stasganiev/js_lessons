@@ -44,3 +44,23 @@ function roots(a,b,c){
 
   return +(x1 + x2).toFixed(2);
 }
+
+// Lesson 4
+function wordSearch(query, seq){
+
+  let res = [];
+  let searchStr = query.toLowerCase();
+  for(let i = 0; i < seq.length; i++) {
+    let soueceStr = seq[i].toLowerCase();
+    if(soueceStr.indexOf(searchStr) >= 0) {
+      res.push(seq[i]);
+    }
+  }
+
+  if(res.length == 0) {
+    res.push('Empty');
+  }
+
+  return res;
+
+}
