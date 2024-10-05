@@ -115,3 +115,19 @@ function peakAndValley(arr){
 
   return res;
 }
+
+// Lesson 9
+function tableGame(table) {
+  let result = [-1];
+
+  let A = table[0][0];
+  let B = table[0][2];
+  let C = table[2][0];
+  let D = table[2][2];
+
+  if (table[0][1] == A+B && table[1][0] == A+C && table[2][1] == C+D && table[1][2] == B+D && table[1][1] == A+B+C+D) {
+    result = [A,B,C,D];
+  }
+
+  return result;
+}
