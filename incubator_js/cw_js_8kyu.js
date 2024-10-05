@@ -131,3 +131,13 @@ function tableGame(table) {
 
   return result;
 }
+
+// Lesson 10
+function wordsToMarks(string){
+  let alf = 'abcdefghijklmnopqrstuvwxyz';
+  let res = 0;
+  for (let i = 0; i < string.length; i++) {
+    res += alf.indexOf(string[i]) + 1;
+  }
+  return res;
+}
