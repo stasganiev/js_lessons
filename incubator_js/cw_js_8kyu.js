@@ -91,3 +91,13 @@ function getCount(str) {
   }
   return rez;
 }
+
+// Lesson 7
+function moveTen(s){
+  const alf = 'abcdefghijklmnopqrstuvwxyzabcdefghijklmnopqrstuvwxyz';
+  let res = '';
+  for(let i = 0; i < s.length; i++) {
+    res += alf[alf.indexOf(s[i]) + 10];
+  }
+  return res;
+}
