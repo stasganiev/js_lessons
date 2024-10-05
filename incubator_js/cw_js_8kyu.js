@@ -101,3 +101,17 @@ function moveTen(s){
   }
   return res;
 }
+
+// Lesson 8
+function peakAndValley(arr){
+  let res = [];
+
+  for(let i = 3; i < (arr.length - 2); i++) {
+    if ((arr[i] > arr[i-1] && arr[i] > arr[i-2] && arr[i] > arr[i-3] && arr[i] > arr[i+1] && arr[i] > arr[i+2] && arr[i] > arr[i+3])
+          || (arr[i] < arr[i-1] && arr[i] < arr[i-2] && arr[i] < arr[i-3] && arr[i] < arr[i+1] && arr[i] < arr[i+2] && arr[i] < arr[i+3])){
+      res.push(arr[i]);
+    }
+  }
+
+  return res;
+}
