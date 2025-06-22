@@ -21,19 +21,19 @@ console.log(rows);
 let popped = rows.pop();
 console.log(popped);
 
-//Step 40-42
+//Step 40-46
 const character = "#";
 const count = 8;
 const rows = [];
 
 for (let i = 0; i < count; i = i + 1) {
-  rows.push(i);
+  rows.push(character.repeat(i + 1));
 }
 
 let result = ""
 
 for (const row of rows) {
-  result = result + row;
+  result = result + row + "\n";
 }
 
 console.log(result);
