@@ -60,3 +60,18 @@ ol li {
     margin: 15px;
     padding: 20px;
 }
+
+.description-wrap {
+    width: 550px;
+    padding: 20px;
+}
+
+.description {
+    font-size: 18px;
+    text-align: justify;
+    letter-spacing: 0;
+    word-spacing: 3px;
+    text-indent: 20px;
+    color: #444444;
+    text-shadow: 2px 2px 0 #e5d4c0, 4px 4px 0 rgba(0, 0, 0, 0.1);
+}
