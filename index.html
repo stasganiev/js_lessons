@@ -1,64 +1,43 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Программирование на JavaScript с Нуля до Гуру 2.0</title>
-    <link href="css/style.css" rel="stylesheet">
-    <link rel="shortcut icon" type="image/x-icon" href="img/JS.png">
+    <title>Odin project development learing</title>
+    <link href="./css/style.css" rel="stylesheet">
+    <link rel="shortcut icon" type="image/x-icon" href="./img/JS.png">
 </head>
 <body>
-	<!-- <div class="class_name1">
-		<label class="class_name2" for="id_name">Ваше имя:</label>
-		<input class="class_name3" type="text" id="id_name" name="nameless" placeholder="Вася" required>
-	</div> -->
 
   <div class="lesson">
 
-    <!-- <p class="title-lesson">Условия</p> -->
-
-    <div class="topic-condition topic">
-      <div class="input_nameJs input-group">
-          <label class="input_nameJs-label" for="id_nameJs">Официальное название JavaScript:</label>
-          <input class="input_nameJs-input input" type="text" id="id_nameJs" name="input_nameJs">
-      </div>
-      <button class="btn_nameJs button" type="button" alt="Проверить...">Проверить ответ</button>
-    </div>
-
-    <div class="topic-condition topic">
-      <div class="input_nameNum input-group">
-          <label class="input_nameNum-label" for="id_nameNum">Проверка знака числа:</label>
-          <input class="input_nameNum-input input" type="text" id="id_nameNum" name="input_nameNum">
-      </div>
-      <button class="btn_nameNum button" type="button" alt="Проверить...">Проверить ответ</button>
-    </div>
-
-  </div>
-
-  <div class="lesson">
+    <p class="title-lesson">Numbers</p>
 
     <div class="topic-condition topic">
       <div class="input_num1 input-group">
-          <label class="input_num1-label" for="id_num1">Число от:</label>
+          <label class="input_num1-label" for="id_num1">Number 1:</label>
           <input class="input_num1-input input" type="text" id="id_num1" name="input_num1">
       </div>
+      <button class="btn_sum button" type="button" alt="Sum...">Sum</button>
+    </div>
+
+    <div class="topic-condition topic">
       <div class="input_num2 input-group">
-          <label class="input_num2-label" for="id_num2">Число по:</label>
+          <label class="input_num2-label" for="id_num2">Number 2:</label>
           <input class="input_num2-input input" type="text" id="id_num2" name="input_num2">
       </div>
-      <button class="btn_odd-nums button" type="button">Четные числа</button>
-      <button class="btn_odd-simple button" type="button">Простые числа</button>
-      <button class="btn_odd-pow button" type="button">Возвести в степень</button>
+      <!-- <button class="btn_sum2 button" type="button" alt="Sum...">Sum 2</button> -->
     </div>
 
   </div>
 
-  <script src = "js_gpt/learnjs.js"></script>
-  <!-- <script src = "js/functions.js"></script>
-  <script src = "js/arrays.js"></script> -->
-  <!-- <script src = "js/0_2_begin.js"></script> -->
-  <!-- <script src = "js/0_3_oop.js"></script> -->
+  <div class="input_result input-group">
+    <label class="input_result-label" for="id_result">Result:</label>
+    <input class="input_result-input input" type="text" id="id_result" name="input_result">
+  </div>
+
+  <script src = "./js/begin.js"></script>
 
 </body>
 </html>
