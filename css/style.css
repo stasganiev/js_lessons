@@ -8,6 +8,7 @@
   padding: 20px;
   position: relative;
   gap: 15px;
+  flex-wrap: wrap;
 }
 
 .title-lesson {
