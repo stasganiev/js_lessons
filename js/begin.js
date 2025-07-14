@@ -21,19 +21,13 @@ btnAvr.addEventListener('click', function(evt) {
 });
 
 const outputResult = function(content) {
-
     innputResult.value = content;
-
 }
 
 const runSum = function(num1, num2, num3, num4, num5, num6) {
-
     outputResult(num1 + num2 + num3 + num4 + num5 + num6);
-
 }
 
 const runAvr = function(num1, num2, num3, num4, num5, num6) {
-
     outputResult((num1 + num2 + num3 + num4 + num5 + num6) / 6);
-
 }
