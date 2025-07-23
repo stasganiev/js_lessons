@@ -22,6 +22,16 @@ function filterRange(arr, a, b) {
 
 }
 
+function filterRangeInPlace(arr, a, b) {
+
+    let index = arr.findIndex(item => (+item < a || +item > b));
+    while (index !== -1) {
+        arr.splice(index, 1);
+        index = arr.findIndex(item => (+item < a || +item > b));
+    }
+
+}
+
 btnCamelize.addEventListener('click', function(evt) {
 
   evt.preventDefault();
