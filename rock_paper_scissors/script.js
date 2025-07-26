@@ -60,16 +60,16 @@ function playRound(humanChoice, computerChoice) {
 let humanScore = 0;
 let computerScore = 0;
 
-let roundResult = playRound(getHumanChoice(), getComputerChoice());
+// let roundResult = playRound(getHumanChoice(), getComputerChoice());
 
-while (roundResult !== undefined) {
-    if (roundResult === 1) {
-        humanScore++;
-    } else if (roundResult === -1) {
-        computerScore++;
-    }
-    console.log(`Score ${humanScore}:${computerScore}`);
-    roundResult = playRound(getHumanChoice(), getComputerChoice());
-}
+// while (roundResult !== undefined) {
+//     if (roundResult === 1) {
+//         humanScore++;
+//     } else if (roundResult === -1) {
+//         computerScore++;
+//     }
+//     console.log(`Score ${humanScore}:${computerScore}`);
+//     roundResult = playRound(getHumanChoice(), getComputerChoice());
+// }
 
 console.log('Game over');
