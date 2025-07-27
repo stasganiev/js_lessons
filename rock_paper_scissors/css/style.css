@@ -84,7 +84,6 @@ button {
 .btn {
     display: inline-block;
     padding: 10px 40px;
-    min-width: 140px;
 
     font: inherit;
     font-family: 'Cuprum', Arial, sans-serif;
@@ -100,6 +99,10 @@ button {
 
     color: #f9faf8;
     background-color: #4e0d2e;
+}
+
+.btn:hover {
+    background-color: #75274e;
 }
 
 /* Main layout */
@@ -143,12 +146,14 @@ button {
 }
 
 .info-player {
+    width: 150px;
     font-size: 12px;
     background-color: bisque;
-    padding: 4px 12px;
-    border: 1px solid #aaa;
+    padding: 3px 9px;
+    border: 1px solid #ccc;
     border-radius: 10px;
     align-self: flex-start;
+    text-align: center;
 }
 
 .info-score {
@@ -172,19 +177,32 @@ button {
     gap: 10px;
 }
 
+.player-current-img {
+    width: 255px;
+    height: 255px;
+    border-radius: 7px;
+}
+
+/* Buttons */
+
 .choice-btn-wrap {
     display: flex;
     flex-direction: row;
-    justify-content: space-between;
+    justify-content: space-around;
     gap: 5px;
 }
 
 .choice-btn {
     width: 40px;
     height: 40px;
+    position: relative;
 }
 
 .choice-btn > img {
     width: 35px;
     height: 35px;
+    border-radius: 4px;
+    position: absolute;
+    top: 2px;
+    left: 24px;
 }
