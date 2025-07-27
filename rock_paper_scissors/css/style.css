@@ -101,10 +101,6 @@ button {
     background-color: #4e0d2e;
 }
 
-.btn:hover {
-    background-color: #75274e;
-}
-
 /* Main layout */
 
 .context {
@@ -185,6 +181,10 @@ button {
 
 /* Buttons */
 
+.btn-reset:hover {
+    background-color: #75274e;
+}
+
 .choice-btn-wrap {
     display: flex;
     flex-direction: row;
@@ -196,13 +196,18 @@ button {
     width: 40px;
     height: 40px;
     position: relative;
+    background-color: transparent;
 }
 
 .choice-btn > img {
-    width: 35px;
-    height: 35px;
+    width: 37px;
+    height: 37px;
     border-radius: 4px;
     position: absolute;
-    top: 2px;
-    left: 24px;
+    top: 1px;
+    left: 23px;
+}
+
+.choice-btn:hover > img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
 }
