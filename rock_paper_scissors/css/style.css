@@ -1,0 +1,216 @@
+/* Global */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  min-width: 320px;
+  margin: 0;
+  padding: 0;
+
+  font-family: 'Roboto', Arial, sans-serif;
+  font-size: 16px;
+  line-height: 24px;
+  
+  color: #1f2937;
+  background-color: #e1e1e1;
+}
+
+main {
+  flex-grow: 1;
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Basic */
+
+.list-default {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
+.btn {
+    display: inline-block;
+    padding: 10px 40px;
+
+    font: inherit;
+    font-family: 'Cuprum', Arial, sans-serif;
+    font-weight: bold;
+    font-size: 14px;
+    line-height: 18px;
+    text-transform: unset;
+    text-align: center;
+    vertical-align: middle;
+
+    border: none;
+    border-radius: 4px;
+
+    color: #f9faf8;
+    background-color: #4e0d2e;
+}
+
+/* Main layout */
+
+.context {
+    width: 100%;
+    padding: 30px;
+    max-width: 1440px;
+    display: flex;
+    flex-direction: column;
+
+    color: #1f2937;
+    background-color: #e1e1e1;
+    justify-content: center;
+}
+
+.info,
+.game-space {
+    padding: 10px;
+    margin-bottom: 15px;
+
+    align-self: center;
+
+    background-color: #fff;
+    border-radius: 10px;
+}
+
+.btn-reset {
+    align-self: flex-start;
+    margin-bottom: 15px;
+}
+
+/* Info block */
+
+.info {
+    min-height: 120px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 25px;
+}
+
+.info-player {
+    width: 150px;
+    font-size: 12px;
+    background-color: bisque;
+    padding: 3px 9px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    align-self: flex-start;
+    text-align: center;
+}
+
+.info-score {
+    width: 150px;
+    font-size: 58px;
+    font-weight: bold;
+    align-self: flex-end;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+/* Game space */
+
+.game-space {
+    display: flex;
+    flex-direction: row;
+    gap: 30px;
+}
+
+.game-space-player1 {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.player-current-img {
+    width: 255px;
+    height: 255px;
+    border-radius: 7px;
+    border: 3px solid #ddd;
+}
+
+/* Buttons */
+
+.btn-reset:hover {
+    background-color: #75274e;
+}
+
+.choice-btn-wrap {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    gap: 5px;
+}
+
+.choice-btn {
+    width: 40px;
+    height: 40px;
+    position: relative;
+    background-color: transparent;
+}
+
+.choice-btn > img {
+    width: 37px;
+    height: 37px;
+    border-radius: 4px;
+    position: absolute;
+    top: 1px;
+    left: 23px;
+}
+
+.choice-btn:hover > img {
+    box-shadow: 0 0 10px rgba(0,0,0,0.5);
+}
