@@ -13,6 +13,13 @@ let currentItem;
 
 // Handlers & Functions
 
+const createCellItem = () => {
+    item = itemTemplate.cloneNode(true);
+    item.style.width = (canvasSize / size) + 'px';
+    item.style.height = (canvasSize / size) + 'px';
+    return item;
+}
+
 const updateCanvas = (size) => {
 
     const totalCells = size * size;
@@ -20,9 +27,7 @@ const updateCanvas = (size) => {
     containerItem.innerHTML = '';
 
     for (ind = 0; ind < totalCells; ind++) {
-        currentItem = itemTemplate.cloneNode(true);
-        currentItem.style.width = (canvasSize / size) + 'px';
-        currentItem.style.height = (canvasSize / size) + 'px';
+        currentItem = createCellItem();
         containerItem.appendChild(currentItem);
         currentItem.addEventListener('mouseenter', onOverview);
     }
