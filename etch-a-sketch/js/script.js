@@ -13,10 +13,11 @@ let currentItem;
 
 // Handlers & Functions
 
-const createCellItem = () => {
-    item = itemTemplate.cloneNode(true);
+const createCellItem = (canvasSize, size) => {
+    const item = itemTemplate.cloneNode(true);
     item.style.width = (canvasSize / size) + 'px';
     item.style.height = (canvasSize / size) + 'px';
+    item.setAttribute('data-step', '0');
     return item;
 }
 
@@ -27,7 +28,7 @@ const updateCanvas = (size) => {
     containerItem.innerHTML = '';
 
     for (ind = 0; ind < totalCells; ind++) {
-        currentItem = createCellItem();
+        currentItem = createCellItem(canvasSize, size);
         containerItem.appendChild(currentItem);
         currentItem.addEventListener('mouseenter', onOverview);
     }
@@ -36,7 +37,8 @@ const updateCanvas = (size) => {
 
 const onOverview = (evt) => {
     evt.preventDefault();
-    evt.target.style.backgroundColor = '#777';
+    overedItem = evt.target;
+    overedItem.style.backgroundColor = '#777';
 }
 
 const btnResizeOnClick = () => {
