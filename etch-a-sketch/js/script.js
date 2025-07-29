@@ -37,8 +37,12 @@ const updateCanvas = (size) => {
 
 const onOverview = (evt) => {
     evt.preventDefault();
-    overedItem = evt.target;
-    overedItem.style.backgroundColor = '#777';
+    const overedItem = evt.target;
+    overedItem.style.backgroundColor = '#142';
+    let step = +overedItem.dataset.step;
+    if (step >= 10) return;
+    overedItem.dataset.step = ++step;
+    overedItem.style.opacity = (0.1 * step);
 }
 
 const btnResizeOnClick = () => {
