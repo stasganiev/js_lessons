@@ -124,3 +124,15 @@ button {
     top: 0;
     left: 0;
 }
+
+.btn_size {
+    position: relative;
+    color: #30178a;
+    background-color: #edf585;
+}
+
+.btn_size > img {
+    position: absolute;
+    top: 9px;
+    left: 11px;
+}
