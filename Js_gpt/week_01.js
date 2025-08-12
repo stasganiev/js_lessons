@@ -43,3 +43,34 @@ function outputArray(arr) {
 outputArray(arrMovies);
 arrMovies.push('Terminator');
 outputArray(arrMovies);
+
+// Day 3
+//
+// Task 1
+
+const numbers = [10, 20, 30, 40, 50, 60];
+
+// 1) Верни новый массив, где каждое число умножено на 2
+let arr = numbers.map((item) => item * 2);
+
+// 2) Верни новый массив только с числами > 25
+arr = numbers.filter((item) => item > 25);
+
+// 3) Найди сумму всех чисел (одно число)
+let sum = numbers.reduce((prev, item) => prev += item, 0);
+
+// Task 2
+
+function capitalizeWords(arr) {
+  return arr.map((item) => item[0] + item.slice(1));
+}
+
+// Task 3
+
+const items = [
+  { title: 'Book', price: 12, inStock: true },
+  { title: 'Pen', price: 3, inStock: false },
+  { title: 'Headphones', price: 40, inStock: true },
+];
+
+let res = items.reduce((prev, item) => prev += item.inStock ? item.price : 0, 0);
