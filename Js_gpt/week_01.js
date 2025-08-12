@@ -13,9 +13,9 @@ if (age < 18 ) {
 
 // Task 2
 
-let res = 0;
-for (let i = 1; i <= 100; i++) res += i;
-console.log(res);
+let res2 = 0;
+for (let i = 1; i <= 100; i++) res2 += i;
+console.log(res2);
 
 // Day 2
 //
@@ -73,4 +73,4 @@ const items = [
   { title: 'Headphones', price: 40, inStock: true },
 ];
 
-let res = items.reduce((prev, item) => prev += item.inStock ? item.price : 0, 0);
+let res3 = items.reduce((prev, item) => prev += item.inStock ? item.price : 0, 0);
