@@ -44,3 +44,8 @@ header, footer {
   border-width: 10px 0 10px 20px;
   border-color: transparent transparent transparent var(--bs-white);
 }
+
+.btn-itd {
+  display: block;
+  max-width: 200px;
+}
