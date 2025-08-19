@@ -1,8 +1,6 @@
 :root {
   --color1: #e95b3b;
   --color2: #050e17;
-  --color3: #e12900;
-  --color4: #ff7354;
 }
 
 header,
@@ -24,7 +22,7 @@ footer {
 }
 
 .itd_play {
-  background-color: var(--color3);
+  background-color: var(--color1);
   width: 60px;
   height: 60px;
   border-radius: 50%;
@@ -83,7 +81,7 @@ footer {
 
 /* О курсе */
 
-.about {
+.about, .schedule {
   background-color: #eee;
 }
 
