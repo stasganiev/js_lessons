@@ -112,7 +112,14 @@ footer {
 
 .forwhom h5 {
   padding: 50px;
+}
+
+/* Программа курса */
+
+.accordion-button:not(.collapsed) {
+  color: var(--bs-black);
   border: 3px solid var(--color1);
+  background-color: var(--bs-white);
 }
 
 /* Цвет */
