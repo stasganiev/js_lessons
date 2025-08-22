@@ -81,7 +81,9 @@ footer {
 
 /* О курсе */
 
-.about, .schedule {
+.about,
+.schedule,
+.author {
   background-color: #eee;
 }
 
@@ -112,6 +114,7 @@ footer {
 
 .forwhom h5 {
   padding: 50px;
+  border: 3px solid var(--color1);
 }
 
 /* Программа курса */
@@ -120,6 +123,23 @@ footer {
   color: var(--bs-black);
   border: 3px solid var(--color1);
   background-color: var(--bs-white);
+}
+
+/* Процесс обучения */
+
+.learning h5 {
+  padding: 25px;
+  border: 3px solid var(--color1);
+}
+
+/* Об авторе */
+
+.author {
+  padding-bottom: 0;
+}
+
+.itd-img {
+  max-width: 260px;
 }
 
 /* Цвет */
