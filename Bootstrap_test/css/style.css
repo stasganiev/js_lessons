@@ -83,7 +83,8 @@ footer {
 
 .about,
 .schedule,
-.author {
+.author,
+.buy {
   background-color: #eee;
 }
 
@@ -140,6 +141,13 @@ footer {
 
 .itd-img {
   max-width: 260px;
+}
+
+/* Отзывы */
+
+.rounded {
+  border-radius: 50% !important;
+  border: 3px solid var(--color1);
 }
 
 /* Цвет */
