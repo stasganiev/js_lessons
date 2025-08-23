@@ -111,3 +111,28 @@ button {
     text-align: center;
     vertical-align: middle;
 }
+
+/* Our styles */
+
+.inputs-wrap {
+  position: relative;
+  margin: 20px;
+}
+
+.label {
+  position: absolute;
+  top: 0;
+  left: 2px;
+  font-size: 0.75em;
+}
+
+.input {
+  position: relative;
+  top: 1em;
+  left: 0;
+
+  padding: 8px;
+
+  border: 1px solid #aaa;
+  border-radius: 7px;
+}
