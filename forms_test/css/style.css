@@ -1,0 +1,113 @@
+@font-face {
+    font-family: 'lektonregular';
+    src: url('../fonts/lekton-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lekton-regular-webfont.woff') format('woff'),
+         url('../fonts/Lekton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+}
+
+:root {
+  --min-viewport-width: 180px;
+  --min-viewport-height: 320px;
+
+  --mn-font-family: 'lektonregular', 'Trebuchet MS', 'Arial Narrow', sans-serif;
+  --mn-font-size: 16px;
+  --mn-line-height: 1.25em;
+  
+  --mn-color1: #1f2937;
+  --mn-bg-color1: #f9faf8;
+}
+
+/* Global common (template) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--mn-font-family);
+  font-size: var(--mn-font-size);
+  line-height: var(--mn-line-height);
+  
+  color: var(--mn-color1);
+  background-color: var(--mn-bg-color1);
+}
+
+main {
+  flex-grow: 1;
+  min-width: var(--min-viewport-width);
+  min-height: var(--min-viewport-height);
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Basic common (template) */
+
+.list-default {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
+.btn {
+    display: inline-block;
+
+    font: inherit;
+    text-transform: unset;
+    text-align: center;
+    vertical-align: middle;
+}
