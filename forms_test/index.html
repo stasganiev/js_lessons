@@ -38,6 +38,49 @@
           <label class="lastname-label label" for="fi_lastname">Last name</label>
           <input class="lastname-input input" type="text" id="fi_lastname" name="lastname" value="" placeholder="ex: Ivanov">
         </div>
+        <div class="email-wrap inputs-wrap">
+          <label class="email-label label" for="fi_email">E-mail</label>
+          <input class="email-input input" type="email" id="fi_email" name="email" value="" placeholder="ex: ivanov@gmail.com">
+        </div>
+
+        <div class="job-wrap inputs-wrap">
+          <label class="job-label label" for="jobselect">Job</label>
+          <select class="job-input input" name="job" id="jobselect">
+            <optgroup label="Game dev">
+              <option value="csharp">C#</option>
+              <option value="cpp">C++</option>
+              <option value="go">Go</option>
+              <option value="pithon">Pithon</option>
+            </optgroup>
+            <optgroup label="Web dev">
+              <option value="frontend" selected>Frontend</option>
+              <option value="backend">Backend</option>
+            </optgroup>
+          </select>
+        </div>
+
+        <div class="ticket_type-wrap inputs-wrap">
+          <p class="ticket_type-label label visually-hidden">Your generate</p>
+          <div>
+            <input type="radio" id="child" name="ticket_type" value="child">
+            <label for="child">Child</label>
+          </div>
+          <div>
+            <input type="radio" id="adult" name="ticket_type" value="adult" checked>
+            <label for="adult">Adult</label>
+          </div>
+          <div>
+            <input type="radio" id="senior" name="ticket_type" value="senior">
+            <label for="senior">Senior</label>
+          </div>
+        </div>
+        
+        <div class="agree-wrap inputs-wrap">
+          <div>
+            <input type="checkbox" id="agree" name="agree_check" checked>
+            <label for="agree">I agree</label>
+          </div>
+        </div>
         
       </fieldset>
 

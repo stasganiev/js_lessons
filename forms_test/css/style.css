@@ -133,6 +133,30 @@ button {
 
   padding: 8px;
 
-  border: 1px solid #aaa;
+  border: 1px solid rgba(104, 104, 104, 0.3);
   border-radius: 7px;
+}
+
+.input::placeholder {
+  opacity: 0.5;
+}
+
+.input:focus,
+.input:active {
+  border: 1px solid rgba(104, 104, 104, 1);
+  outline: none;
+}
+
+.job-input option {
+  color: #a22;
+  font-size: 0.9em;
+}
+
+.job-input optgroup {
+  color: #22a;
+  font-size: 0.9em;
+}
+
+.ticket_type-wrap {
+  margin-top: 40px;
 }
