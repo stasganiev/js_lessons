@@ -145,23 +145,15 @@ button {
 /* Adaptive layout */
 
 .container-fluid {
-    width: 100%;
+  width: 100%;
 }
 
-@media (max-width: var(--s-max)) {
-    .container-fluid {
-        padding: 0 var(--s-padding);
-    }
+.calendar-space {
+  display: grid;
+  grid-template-columns: 50px 50px 50px 50px 50px 50px 50px;
+  grid-template-rows: 50px 50px 50px 50px 50px 50px;
 }
 
-@media (min-width: var(--m-min)) and (max-width: var(--m-max)) {
-    .container-fluid {
-        padding: 0 var(--m-padding);
-    }
-}
-
-@media (min-width: var(--l-min)) {
-    .container-fluid {
-        padding: 0 var(--l-padding);
-    }
+.day-cell-wrap {
+  border: 1px dotted #999;
 }
