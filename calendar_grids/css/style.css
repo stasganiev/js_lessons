@@ -1,0 +1,167 @@
+@font-face {
+    font-family: 'lektonregular';
+    src: url('../fonts/lekton-regular-webfont.woff2') format('woff2'),
+         url('../fonts/lekton-regular-webfont.woff') format('woff'),
+         url('../fonts/Lekton-Regular.ttf') format('truetype');
+    font-weight: normal;
+    font-style: normal;
+  font-display: swap;
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116,
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+@font-face {
+  font-family: 'Gilroy Medium';
+  src: url('../fonts/Gilroy-Medium.woff2');
+  src: url('../fonts/Gilroy-Medium.eot?#iefix') format('embedded-opentype'),
+    url('../fonts/Gilroy-Medium.woff') format('woff'),
+    url('../fonts/Gilroy-Medium.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+  unicode-range: U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116,
+    U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+2000-206F, U+2074, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD;
+}
+
+:root {
+  --min-viewport-width: 180px;
+  --min-viewport-height: 320px;
+
+  --mn-font-family: 'Gilroy Medium', 'Candara', sans-serif;
+  --mn-font-size: 16px;
+  --mn-line-height: 1.25em;
+  
+  --mn-color1: #1f2937;
+  --mn-bg-color1: #f9faf8;
+
+  /* layout */
+  --s-max: 767.9px;
+  --m-min: 768px;
+  --m-max: 1279.9px;
+  --l-min: 1280px;
+
+  --s-padding: 20px;
+  --m-padding: 30px;
+  --l-padding: 130px;
+
+  /* Adaptive pictures */
+  --retina-dpi: 144dpi;
+  --retina-dppx: 1.5dppx;
+}
+
+/* Global common (template) */
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+html {
+  height: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  height: 100%;
+
+  margin: 0;
+  padding: 0;
+
+  font-family: var(--mn-font-family);
+  font-size: var(--mn-font-size);
+  line-height: var(--mn-line-height);
+  
+  color: var(--mn-color1);
+  background-color: var(--mn-bg-color1);
+}
+
+main {
+  flex-grow: 1;
+  min-width: var(--min-viewport-width);
+  min-height: var(--min-viewport-height);
+}
+
+img {
+  display: inline-block;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  display: inline-block;
+  text-decoration: none;
+  font-family: inherit;
+  font-size: inherit;
+  line-height: inherit;
+  color: inherit;
+}
+
+button {
+    margin: 0;
+    padding: 0;
+    font-size: inherit;
+    line-height: inherit;
+    font-family: inherit;
+    color: inherit;
+    background-color: transparent;
+    border: none;
+    box-shadow: none;
+    cursor: pointer;
+}
+
+/* Basic common (template) */
+
+.list-default {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.visually-hidden {
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    margin: -1px;
+    border: 0;
+    padding: 0;
+    clip: rect(0 0 0 0);
+    overflow: hidden;
+    white-space: nowrap;
+    clip-path: inset(100%);
+}
+
+.btn {
+    display: inline-block;
+
+    font: inherit;
+    text-transform: unset;
+    text-align: center;
+    vertical-align: middle;
+}
+
+/* Adaptive layout */
+
+.container-fluid {
+    width: 100%;
+}
+
+@media (max-width: var(--s-max)) {
+    .container-fluid {
+        padding: 0 var(--s-padding);
+    }
+}
+
+@media (min-width: var(--m-min)) and (max-width: var(--m-max)) {
+    .container-fluid {
+        padding: 0 var(--m-padding);
+    }
+}
+
+@media (min-width: var(--l-min)) {
+    .container-fluid {
+        padding: 0 var(--l-padding);
+    }
+}
