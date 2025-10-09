@@ -29,9 +29,10 @@
     <div class="container-fluid">
 
       <div class="header-space">
-        <button class="btn btn-previous-month">p</button>
-        <div class="date-title">Januar 2025</div>
-        <button class="btn btn-next-month">n</button>
+        <button class="btn btn-previous-month" type="button" aria-label="Previous">p</button>
+        <div class="date-title" aria-live="polite">Januar 2025</div>
+        <button class="btn btn-next-month" type="button" aria-label="Next">n</button>
+        <button class="btn btn-today" type="button" aria-label="Today">Today</button>
       </div>
 
       <div class="calendar-space">
@@ -184,6 +185,8 @@
         </div>
       </div>
 
+      <div class="calendar-legend" aria-hidden="false"></div>
+
     </div>
   </main>
 
@@ -191,7 +194,7 @@
 
   </footer> -->
 
-  <script src="./js/script.js"></script>
+  <script defer src="./js/script.js"></script>
   
 </body>
 </html>
